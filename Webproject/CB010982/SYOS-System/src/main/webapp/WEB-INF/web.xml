@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee">
+    <display-name>SYOS System</display-name>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/Authentication/Login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Sign-Up Servlet -->
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/Authentication/SignUp</url-pattern>
+    </servlet-mapping>
+
+    <!-- Product Servlet -->
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/Pages/Products</url-pattern>
+    </servlet-mapping>
+
+    <!-- Cart Servlet -->
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/Pages/cart</url-pattern>
+    </servlet-mapping>
+
+    <!-- Cart Items Servlet -->
+    <servlet>
+        <servlet-name>CartItemsServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.CartItemsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartItemsServlet</servlet-name>
+        <url-pattern>/Pages/CartItems</url-pattern>
+    </servlet-mapping>
+
+    <!-- Authentication Filter -->
+    <servlet>
+        <servlet-name>AuthenticationFilter</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.AuthenticationFilter</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthenticationFilter</servlet-name>
+        <url-pattern>/AuthenticationFilter</url-pattern>
+    </servlet-mapping>
+
+    <!-- Role Servlet -->
+    <servlet>
+        <servlet-name>RoleServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.RoleServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RoleServlet</servlet-name>
+        <url-pattern>/Role</url-pattern>
+    </servlet-mapping>
+
+    <!-- Checkout Servlet -->
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>com.mycompany.syos.system.controllers.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/Checkout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome File -->
+    <welcome-file-list>
+        <welcome-file>/Authentication/Login.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
